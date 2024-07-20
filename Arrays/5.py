@@ -15,4 +15,5 @@ array_length = len(array)
 # Getting the array buffer size
 array_buffer = array.nbytes
 
+# Printing it in a fancier way
 print(f"Information about the array:\nMemory Address List: {memory_address_list} \nLength of Array: {array_length} \nSize of Array Buffer: {array_buffer}")
