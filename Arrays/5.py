@@ -3,16 +3,16 @@
 # Importing numpy s np
 import numpy as np
 
-# Defining a numpy array
+# Defining a numpy list
 array = np.array([1, 3, 5, 7, 9])
 
-# Getting the memory adress of the array with id()
+# Getting the memory adress of the list with id()
 memory_address_list = id(array)
 
-# Getting the length of the array
+# Getting the length of the list
 array_length = len(array)
 
-# Getting the array buffer size
+# Getting the list buffer size
 array_buffer = array.nbytes
 
 # Printing it in a fancier way
