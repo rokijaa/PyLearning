@@ -1,12 +1,18 @@
 # 5. Write a Python program to get the current memory address and the length in elements of the buffer used to hold an array's contents. Also, find the size of the memory buffer in bytes.
 
-# Defining python list
-array = [1, 3, 5, 7, 9]
+# Importing numpy s np
+import numpy as np
 
-# Getting the memory adress of the list with id()
-memory_adress_list = id(array)
+# Defining a numpy array
+array = np.array([1, 3, 5, 7, 9])
 
-# Getting the length of the list
+# Getting the memory adress of the array with id()
+memory_address_list = id(array)
+
+# Getting the length of the array
 array_length = len(array)
 
-print(f"The memory address of the list is: {memory_adress_list}, and the lenght is: {array_length}")
+# Getting the array buffer size
+array_buffer = array.nbytes
+
+print(f"Information about the array:\nMemory Address List: {memory_address_list} \nLength of Array: {array_length} \nSize of Array Buffer: {array_buffer}")
